@@ -49,5 +49,7 @@ public class HibernateUtil {
        	for(String s:names){
        		System.out.println(s);	
        	}
+       	System.out.println("Done verything");
+       	
 	}
 }
