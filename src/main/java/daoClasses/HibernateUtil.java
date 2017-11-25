@@ -37,7 +37,7 @@ public class HibernateUtil {
 		
 		
 		session = factory.openSession();
-		System.out.println("Loading now");
+		System.out.println("Loading now......");
 	
 		
 		
