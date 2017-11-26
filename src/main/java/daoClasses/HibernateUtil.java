@@ -1,8 +1,6 @@
 package daoClasses;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -50,6 +48,6 @@ public class HibernateUtil {
        		System.out.println(s);	
        	}
        	System.out.println("Done verything");
-       	
+       	System.out.print("....");
 	}
 }

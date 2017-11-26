@@ -20,9 +20,7 @@ public class Address {
 	public Address() {
 		super();
 	}
-	
-	
-	
+		
 	public int getUserId() {
 		return userId;
 	}
