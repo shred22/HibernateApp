@@ -83,7 +83,7 @@ public class CustomersDAO {
 			session.getTransaction().commit();
 			session.close();
 			
-			System.out.println("Done");
+			System.out.println("Hibernate App is done persisting Objects Done");
 		}
 	
 }
