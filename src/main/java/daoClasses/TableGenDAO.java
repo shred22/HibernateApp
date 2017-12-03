@@ -6,7 +6,9 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
-
+interface Demo {
+	public void done();
+}
 public class TableGenDAO {
 	private static final SessionFactory concreteSessionFactory;
 	static {
@@ -52,7 +54,12 @@ public static void main(String... args) {
 		session.save(s1);
 		session.getTransaction().commit();
 		session.close();
-		System.out.println("Done");
+	
+		Demo d= TableGenDAO::sayDone;
+		d.done();
 	}
 	
+public static void sayDone(){
+	System.out.println("Done");
+}
 }
