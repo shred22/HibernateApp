@@ -2,7 +2,7 @@ package mapping;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.classic.Session;
+import org.hibernate.Session;
 
 public class PersonDAOUtil {
 	public static void main(String args[]) {

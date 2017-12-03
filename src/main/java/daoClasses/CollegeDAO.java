@@ -2,9 +2,10 @@ package daoClasses;
 
 import java.util.Set;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.classic.Session;
+
 
 public class CollegeDAO {
 
