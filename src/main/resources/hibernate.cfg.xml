@@ -27,5 +27,6 @@
          <mapping class ="manyTomanyDemo.Author"/>
          <mapping class ="secondLevelCacheDemo.DepartmentEntity"/>
          <mapping class ="secondLevelCacheDemo.EmployeeEntity"/>
+         <mapping class = "criteriaDemos.League"/>
         </session-factory>
 </hibernate-configuration>
