@@ -1,5 +1,6 @@
 package criteriaDemos;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -7,6 +8,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.criterion.SimpleExpression;
 
@@ -49,12 +53,23 @@ public class LeagueDAO {
 		transaction = session.beginTransaction();
 		
 		Criteria criteria = session.createCriteria(League.class);
-		SimpleExpression eq = Restrictions.eq("name","La Liga" );
+		/*SimpleExpression eq = Restrictions.eq("name","La Liga" );
 		
-		criteria.add(eq);
+		criteria.add(eq);*/
+		
+		criteria.setProjection(Projections.property("name"));
+		criteria.addOrder(Order.asc("name"));
 		
 	List l = criteria.list();
-	System.out.println("\nReqd League : "+((League)l.get(0)).getName());
+	System.out.println("\nReqd League : "+(l.get(0)));
+
+	
+	for (Iterator iterator = l.iterator(); iterator.hasNext();) {
+		System.out.println( (String) iterator.next());
+		
+
+		
+	}
 	
 	transaction.commit();
 	

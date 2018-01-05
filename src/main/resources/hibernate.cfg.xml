@@ -11,7 +11,7 @@
         <property name="connection.pool_size">1</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create-drop</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
            <property name="hibernate.cache.use_second_level_cache">true</property>
         <property name="hibernate.generate_statistics">true</property>
@@ -28,5 +28,6 @@
          <mapping class ="secondLevelCacheDemo.DepartmentEntity"/>
          <mapping class ="secondLevelCacheDemo.EmployeeEntity"/>
          <mapping class = "criteriaDemos.League"/>
+          <mapping class = "daoClasses.Mobile"/>
         </session-factory>
 </hibernate-configuration>
