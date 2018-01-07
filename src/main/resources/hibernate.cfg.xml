@@ -28,6 +28,7 @@
          <mapping class ="secondLevelCacheDemo.DepartmentEntity"/>
          <mapping class ="secondLevelCacheDemo.EmployeeEntity"/>
          <mapping class = "criteriaDemos.League"/>
+          <mapping class = "criteriaDemos.Player"/>
           <mapping class = "daoClasses.Mobile"/>
         </session-factory>
 </hibernate-configuration>
